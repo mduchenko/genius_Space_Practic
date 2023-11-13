@@ -1,8 +1,49 @@
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/poppins-v20-latin-300.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/poppins-v20-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/poppins-v20-latin-600.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/poppins-v20-latin-900.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 :root {
   --color-brand: #819b57;
   --color-brand-dark: #465929;
   --color-dark: #31261a;
   ---color-light: #faf4ea;
+  --color-copyright: #a18268;
 }
 /* base */
 ul {
@@ -10,14 +51,30 @@ ul {
 }
 body {
   color: var(--color-dark);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+address {
+  font-style: normal;
 }
 
+.accent {
+  color: var(--color-brand);
+}
+
+/* #region header */
 .link {
   color: var(---color-light);
+  text-align: center;
+  text-decoration: none;
 }
 .link:hover {
   color: var(--color-brand);
+  font-weight: 600;
 }
+
 .button {
   border-radius: 8px;
   border: 2px solid var(--color-brand);
@@ -25,22 +82,76 @@ body {
   color: var(---color-light);
   padding: 16px 32px;
   cursor: pointer;
+  font-weight: 600;
 }
 .button:hover {
   background-color: transparent;
   color: var(--color-brand);
 }
-
+/* #endregion */
+/* #region hero */
 .hero-title {
   color: var(---color-light);
+  font-size: 128px;
+  font-weight: 900;
 }
-.accent {
-  color: var(--color-brand);
-}
+/*#endregion*/
+
+/*#region Tradition */
 .advantages-list {
   color: var(---color-light);
   background-color: var(--color-brand);
 }
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
 .section-title {
   color: var(--color-dark);
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.31;
 }
+.tradition-text .uppercase {
+  text-transform: uppercase;
+}
+.tradition-text .brand {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+/*#endregion */
+/*#region shef */
+.shef-name {
+  font-size: 40px;
+  font-weight: 600;
+}
+/* #endregion */
+
+/* #region formats*/
+.formats-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.formats-description > p {
+  font-size: 14px;
+  font-weight: 300;
+}
+/* #endregion */
+/* #region contacts */
+
+/* #endregion */
+/* #region footer */
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(---color-light);
+  text-decoration: none;
+}
+.address-link:hover {
+  color: var(--color-brand);
+}
+.address-copyright {
+  font-size: 14px;
+  color: var(--color-copyright);
+}
+/* #endregion */
