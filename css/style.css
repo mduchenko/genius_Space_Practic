@@ -46,6 +46,9 @@
   --color-copyright: #a18268;
 }
 /* base */
+* {
+  box-sizing: border-box;
+}
 ul {
   list-style-type: none;
 }
@@ -55,15 +58,38 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
 }
 address {
   font-style: normal;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+.section {
+  padding: 48px 0;
 }
 
 .accent {
   color: var(--color-brand);
 }
-
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 24px;
+}
 /* #region header */
 .link {
   color: var(---color-light);
@@ -90,14 +116,28 @@ address {
 }
 /* #endregion */
 /* #region hero */
+.hero-section {
+  padding: 272px 0;
+  text-align: center;
+}
 .hero-title {
   color: var(---color-light);
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 /*#endregion*/
-
+.advantages {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 /*#region Tradition */
+.traditions-section {
+  padding-top: 96px;
+}
+.tradition {
+  padding-bottom: 42px;
+}
 .advantages-list {
   color: var(---color-light);
   background-color: var(--color-brand);
@@ -112,6 +152,9 @@ address {
   font-weight: 900;
   line-height: 1.31;
 }
+.tradition-text {
+  padding-bottom: 42px;
+}
 .tradition-text .uppercase {
   text-transform: uppercase;
 }
@@ -124,6 +167,10 @@ address {
 .shef-name {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
+}
+.shef-title {
+  margin-bottom: 80px;
 }
 /* #endregion */
 
@@ -136,9 +183,14 @@ address {
   font-size: 14px;
   font-weight: 300;
 }
+.form-title {
+  margin-top: 80px;
+}
 /* #endregion */
 /* #region contacts */
-
+.cont-title {
+  margin-bottom: 16px;
+}
 /* #endregion */
 /* #region footer */
 .address-link {
