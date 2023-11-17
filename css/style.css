@@ -46,7 +46,9 @@
   --color-copyright: #a18268;
 }
 /* base */
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 ul {
@@ -71,6 +73,9 @@ h3,
 p {
   margin-top: 0;
 }
+a {
+  display: inline-block;
+}
 .section {
   padding: 48px 0;
 }
@@ -92,9 +97,12 @@ section:not(.hero-section, .advantages) {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 0 24px;
 }
 /* #region header */
+header {
+  padding-top: 32px;
+}
 .header,
 .header-navigation {
   display: flex;
@@ -217,11 +225,11 @@ section:not(.hero-section, .advantages) {
 /*#region shef */
 .shef-list {
   display: flex;
-  gap: 10px;
-  justify-content: space-between;
+  gap: 40px 30px;
+  flex-wrap: wrap;
 }
 .shef-item {
-  width: 50%;
+  flex-basis: calc(100% / 2 - 30px / 2);
 }
 /* .shef-wrap {
   border: 1px solid var(--color-dark);
@@ -268,10 +276,20 @@ section:not(.hero-section, .advantages) {
   bottom: 23px;
   background: #cfcfbc;
 }
+.shef-about > p {
+  margin-bottom: 18px;
+}
+.shef-about p:last-child {
+  margin-bottom: 0;
+}
 /* #endregion */
 
 /* #region formats*/
-
+.formats-wrap {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
 .format-list {
   display: flex;
   flex-wrap: wrap;
@@ -296,6 +314,7 @@ section:not(.hero-section, .advantages) {
 }
 .form-title {
   margin-top: 80px;
+  text-align: center;
 }
 .walrus {
   background-image: linear-gradient(
@@ -338,6 +357,7 @@ section:not(.hero-section, .advantages) {
   width: 44px;
   height: 44px;
   background-color: transparent;
+  flex-shrink: 0;
 }
 .carusel-arrow {
   fill: var(---color-light);
@@ -345,6 +365,7 @@ section:not(.hero-section, .advantages) {
   width: 32px;
   height: 32px;
 }
+
 .carusel-button:hover {
   background-color: var(--color-dark);
 }
@@ -354,8 +375,20 @@ section:not(.hero-section, .advantages) {
 }
 /* #endregion */
 /* #region contacts */
+.contacts-section {
+  padding-bottom: 96px;
+}
 .cont-title {
   margin-bottom: 16px;
+}
+.contacts-wrap {
+  display: flex;
+  gap: 32px;
+}
+.contact-item {
+  flex-basis: calc(100% / 2 - 32px / 2);
+  border-radius: 16px;
+  /* flex-shrink: 0; */
 }
 /* #endregion */
 /* #region footer */
@@ -364,7 +397,23 @@ section:not(.hero-section, .advantages) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 32px 0;
 }
+.footer-wrap {
+  display: flex;
+  gap: 166px;
+  justify-content: space-between;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-list-social {
+  display: flex;
+  gap: 22px;
+}
+
 .address-link {
   font-size: 16px;
   font-weight: 300;
