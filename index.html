@@ -199,11 +199,44 @@
               <p class="contacts-title">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
-              <button class="button" type="button">Замовити дзвінок</button>
-              <p>
-                Натискаючи на кнопку я погоджуюсь з
-                <a href="">політикою конфіденційності</a>
-              </p>
+              <form
+                name="contacts-form"
+                class="contacts-form"
+                action="#"
+                method="get"
+                novalidate
+                autocomplete="on"
+              >
+                <!-- <label for="userName">Ім’я</label> -->
+                <input
+                  class="contacts-form-el"
+                  type="text"
+                  name="userName"
+                  id="userName"
+                  placeholder="Ім’я"
+                />
+                <input
+                  class="contacts-form-el"
+                  type="tel"
+                  name="usertelephone"
+                  id="usertelephone"
+                  placeholder="Телефон"
+                />
+                <input
+                  class="contacts-form-el"
+                  type="email"
+                  name="useremail"
+                  id="useremail"
+                  placeholder="Електронна пошта"
+                />
+                <button class="button form-button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-politic">
+                  Натискаючи на кнопку я погоджуюсь з <br />
+                  <a href="">політикою конфіденційності</a>
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-item"
@@ -296,12 +329,51 @@
       <!-- <img class="bread-lt" src="./img/bread-lt.png" alt="bread-lt">
       <img class="bread-rt" src="./img/bread-rt.png" alt="bread-rt"> -->
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
-        <h2>Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <button type="button">Замовити дзвінок</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form
+          name="contacts-form"
+          class="contacts-form"
+          action="#"
+          method="get"
+          novalidate
+          autocomplete="on"
+        >
+          <label for="userName "></label>
+          <input
+            class="contacts-form-el"
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Ім’я"
+          />
+          <input
+            class="contacts-form-el"
+            type="tel"
+            name="usertelephone"
+            id="usertelephone"
+            placeholder="Телефон"
+          />
+          <input
+            class="contacts-form-el"
+            type="email"
+            name="useremail"
+            id="useremail"
+            placeholder="Електронна пошта"
+          />
+          <button class="button form-button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-politic">
+            Натискаючи на кнопку я погоджуюсь з <br />
+            <a href="">політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="/js/script.js"></script>
