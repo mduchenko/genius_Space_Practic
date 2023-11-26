@@ -204,16 +204,19 @@
                 class="contacts-form"
                 action="#"
                 method="get"
-                novalidate
                 autocomplete="on"
               >
+                <!-- novalidate -->
                 <!-- <label for="userName">Ім’я</label> -->
                 <input
                   class="contacts-form-el"
                   type="text"
                   name="userName"
                   id="userName"
+                  minlength="4"
+                  maxlength="20"
                   placeholder="Ім’я"
+                  required
                 />
                 <input
                   class="contacts-form-el"
@@ -221,6 +224,8 @@
                   name="usertelephone"
                   id="usertelephone"
                   placeholder="Телефон"
+                  pattern="^\+[0-9]{12}"
+                  required
                 />
                 <input
                   class="contacts-form-el"
@@ -228,6 +233,7 @@
                   name="useremail"
                   id="useremail"
                   placeholder="Електронна пошта"
+                  required
                 />
                 <button class="button form-button" type="submit">
                   Замовити дзвінок
@@ -341,7 +347,6 @@
           class="contacts-form"
           action="#"
           method="get"
-          novalidate
           autocomplete="on"
         >
           <label for="userName "></label>
@@ -351,6 +356,7 @@
             name="userName"
             id="userName"
             placeholder="Ім’я"
+            required
           />
           <input
             class="contacts-form-el"
@@ -358,6 +364,8 @@
             name="usertelephone"
             id="usertelephone"
             placeholder="Телефон"
+            pattern="^\+[0-9]{12}"
+            required
           />
           <input
             class="contacts-form-el"
@@ -365,7 +373,19 @@
             name="useremail"
             id="useremail"
             placeholder="Електронна пошта"
+            required
           />
+          <!-- <div class="checkbox">
+            <input
+              class="check-input"
+              type="checkbox"
+              name="userCheck"
+              id="userCheck"
+            />
+            <label class="check-label" for="userCheck">
+              Я точно погоджуюсь з політикою конфіденційності
+            </label> -->
+          </div>
           <button class="button form-button" type="submit">
             Замовити дзвінок
           </button>
