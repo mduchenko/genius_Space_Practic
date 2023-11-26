@@ -20,9 +20,11 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__navigation">
-            <a class="logo" href="./index.html"
-              ><img src="logo/logo.svg" alt="shop_bakery"
-            /></a>
+            <div class="header__wrap">
+              <a class="logo" href="./index.html"
+                ><img src="logo/logo.svg" alt="shop_bakery"
+              /></a>
+            </div>
             <ul class="header__list">
               <li>
                 <a class="link" href="#traditions-section">Наші традиції</a>
@@ -32,10 +34,24 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="header__button button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
+          <button class="header__btn-mobile mobile-btn-open" type="button">
+            <img src="./icon/menu.svg" alt="menu" width="24" height="24" />
+          </button>
         </div>
+      </div>
+      <div class="mobile-menu">
+        <button class="mobile-menu__btn mobile-btn-close" type="button">
+          close
+        </button>
+        <a class="mobile-menu__logo" href="./index.html"
+          ><img
+            class="mobile-menu__logo-img"
+            src="logo/logo.svg"
+            alt="shop_bakery"
+        /></a>
       </div>
     </header>
     <main>
@@ -44,6 +60,12 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages">
@@ -86,7 +108,7 @@
           </div>
         </div>
       </section>
-      <section class="shef-section" id="shef-section">
+      <!-- <section class="shef-section" id="shef-section">
         <div class="container">
           <h2
             class="section-title shef-section__title shef-section__title--centred"
@@ -223,8 +245,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="section contacts-section" id="contacts-section">
+      </section> -->
+      <!-- <section class="section contacts-section" id="contacts-section">
         <div class="container">
           <div class="contacts-section__wrap">
             <div class="contacts-section__item">
@@ -240,10 +262,10 @@
                 action="#"
                 method="get"
                 autocomplete="on"
-              >
-                <!-- novalidate -->
-                <!-- <label for="userName">Ім’я</label> -->
-                <input
+              > -->
+      <!-- novalidate -->
+      <!-- <label for="userName">Ім’я</label> -->
+      <!-- <input
                   class="contacts-form__el"
                   type="text"
                   name="userName"
@@ -291,9 +313,9 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
           <div class="conteiner-logo">
@@ -366,13 +388,15 @@
             <p class="address-copyright">&copy; 2022 Дані захищені</p>
           </div>
         </div>
-      </div>
-      <!-- <img class="bread-lt" src="./img/bread-lt.png" alt="bread-lt">
+      </div> -->
+    <!-- <img class="bread-lt" src="./img/bread-lt.png" alt="bread-lt">
       <img class="bread-rt" src="./img/bread-rt.png" alt="bread-rt"> -->
-    </footer>
+    <!-- </footer> -->
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">close</button>
+        <button class="modal-btn-close modal__btn-close" type="button">
+          close
+        </button>
         <h2 class="modal__title">Замовити дзвінок</h2>
         <p class="modal__text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
@@ -435,5 +459,6 @@
       </div>
     </div>
     <script src="/js/script.js"></script>
+    <script src="/js/mobile-script.js"></script>
   </body>
 </html>

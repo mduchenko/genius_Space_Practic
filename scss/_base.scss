@@ -11,10 +11,14 @@ ul {
 body {
   color: var(--color-dark);
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.5;
   margin: 0;
+  @media screen  and (min-width:$bp-desktop){
+  font-size: 18px;
+  font-weight: 400;
+  }
 }
 address {
   font-style: normal;
@@ -29,7 +33,10 @@ a {
   display: inline-block;
 }
 .section {
+  padding: 20px 0;
+  @media screen  and (min-width:$bp-desktop){
   padding: 48px 0;
+  }
 }
 section:not(.hero-section, .advantages) {
   background-color: var(---color-light);

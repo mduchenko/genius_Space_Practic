@@ -15,15 +15,39 @@
 }
 &__navigation {
   flex-grow: 1;
+  
 }
 &__list {
+  display: none;
+  @media screen  and (min-width:$bp-desktop){
   display: flex;
   justify-content: space-between;
   gap: 64px;
   padding-left: 0;
   align-items: center;
+}}
+&__btn-mobile{
+  display: flex;
+  top: 0;
+  right: 0;
+  padding-right: 20px;
+  background-color:transparent;
+  border:none;
+  @media screen  and (min-width:$bp-desktop){
+  display: none;
 }
 }
+&__button{
+  display: none;
+  @media screen  and (min-width:$bp-desktop){
+  display: block;
+}
+}
+}
+
+
+
+
 /* .button:disabled {
   color: gray;
   background-color: #819b57;

@@ -1,20 +1,40 @@
 .advantages {
+  padding: 20px 21px;
+  padding-top: 40px;
+  font-size: 14px;
+  background-color:var(---color-light);
+  @media screen and (min-width:$bp-tablet) {
+  font-size: 20px;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: var(--color-brand);
+  }
   &__list {
-  color: var(---color-light);
+  background-color:#CFCFBC;
+  border-radius: 16px;
+  padding: 24px 40px;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  gap: 16px;
+  color:#31261A;
+  @media screen and (min-width:$bp-tablet) {
   padding-left: 0;
   margin: 0;
-  display: flex;
+  flex-direction:row;
   justify-content: space-between;
   gap: 40px;
+  background-color:transparent;
   align-items: center;
+  color: var(---color-light);
+  }
 }
 &__item {
+font-size: 14px;
+@media screen and (min-width:$bp-tablet) {
   font-size: 20px;
   font-weight: 300;
-}
+}}
 }
 
 

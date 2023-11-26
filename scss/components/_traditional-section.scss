@@ -1,25 +1,41 @@
 /*#region Tradition */
 .traditions-section{
-   padding-top: 96px;
+   padding-top: 20px;
+   @media screen  and (min-width:$bp-tablet){ 
+    padding-top: 96px;
+  }
 &__flex {
+ @media screen  and (min-width:$bp-tablet){
   display: flex;
   gap: 100px;
+ }
+  
 }
 &__img {
+  display: none;
+  @media screen  and (min-width:$bp-tablet){
+  display: inline-block;
   border-top-right-radius: 100%;
   border-top-left-radius: 100%;
   max-width:  606px;
   max-height: 466px;
+  }
 }
 &__title {
   color: var(--color-dark);
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 1.31;
+  margin-top: 0;
+@media screen  and (min-width:$bp-tablet){
+  font-size: 64px;}
 }
 &__text {
-  padding-bottom: 42px;
+  padding-bottom: 16px;
   margin: 0;
+  @media screen  and (min-width:$bp-desktop){
+    padding-bottom: 42px;
+  }
 }
 }
 /*#endregion */
