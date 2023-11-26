@@ -1,0 +1,26 @@
+
+.carusel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid var(--color-dark);
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+.carusel-arrow {
+  fill: var(---color-light);
+  stroke: #31261a;
+  width: 32px;
+  height: 32px;
+}
+
+.carusel-button:hover {
+  background-color: var(--color-dark);
+}
+.carusel-button:hover .carusel-arrow {
+  fill: var(--color-dark);
+  stroke: var(---color-light);
+}

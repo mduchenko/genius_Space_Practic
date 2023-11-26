@@ -1,0 +1,76 @@
+/* #region footer */
+.footer {
+  background: url("../img/bg/hero_bg.png"), var(--color-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+  position: relative;
+}
+.footer-wrap {
+  display: flex;
+  gap: 166px;
+  justify-content: space-between;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-list-social {
+  display: flex;
+  gap: 22px;
+}
+
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(---color-light);
+  text-decoration: none;
+}
+.address-link:hover {
+  color: var(--color-brand);
+}
+.address-icon {
+  fill: var(--color-dark);
+}
+.address-icon:hover {
+  stroke: var(--color-dark);
+}
+.address-copyright {
+  font-size: 14px;
+  color: var(--color-copyright);
+}
+.bread-lt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.bread-rt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.footer::before {
+  content: "";
+  background-image: url("../img/bread-lt.png");
+  /* z-index: 1; */
+  width: 179px;
+  height: 121px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* background-size: cover; */
+}
+.footer::after {
+  content: "";
+  background-image: url("../img/bread-rt.png");
+  /* z-index: 1; */
+  width: 378px;
+  height: 187px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* #endregion */

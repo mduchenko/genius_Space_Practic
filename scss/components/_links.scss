@@ -1,0 +1,10 @@
+.link {
+  color: var(---color-light);
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s, font-weight 0.3s;
+}
+.link:hover {
+  color: var(--color-brand);
+  font-weight: 600;
+}

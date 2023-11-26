@@ -1,0 +1,32 @@
+/* #region contacts */
+.contacts-section {
+  padding-bottom: 96px;
+  &__wrap {
+  display: flex;
+  gap: 32px;
+}
+&__item {
+  flex-basis: calc(100% / 2 - 32px / 2);
+  border-radius: 16px;
+  /* flex-shrink: 0; */
+}
+&__title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.31;
+  color: var(--color-dark);
+  margin-bottom: 42px;
+}
+&__text{
+  color: var(--color-brand-dark);
+}
+&__map{
+  border-radius: 16px;
+}
+}
+.cont-title {
+  margin-bottom: 16px;
+}
+
+
+/* #endregion */

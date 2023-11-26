@@ -1,0 +1,22 @@
+.shef-card{
+display: flex;
+gap: 30px;
+&__foto {
+  /* display: block; */
+  border-radius: 4px 4px 4px 200px;
+  /* transform: translate(10px, -10px); */
+  box-shadow: -16px 16px 0 0 var(---color-light),
+    -16px 16px 0 1px var(--color-dark);
+}
+&__name {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+&__description {
+  margin-bottom: 18px;
+}
+&__about &__description:last-child {
+  margin-bottom: 0;
+}
+}

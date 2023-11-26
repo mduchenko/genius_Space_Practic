@@ -1,0 +1,18 @@
+.button {
+  border-radius: 8px;
+  border: 2px solid var(--color-brand);
+  background: var(--color-brand);
+  color: var(---color-light);
+  padding: 16px 32px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: transparent;
+  color: var(--color-brand);
+}
+.form-button {
+  width: fit-content;
+  padding: 16px 32px;
+  align-self: center;
+}

@@ -1,0 +1,22 @@
+/* #region hero */
+.hero-section {
+  padding: 272px 0;
+  text-align: center;
+  background-image: linear-gradient(
+      103deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url("../img/bg/hero_bg.jpg");
+  background-size: cover;
+ &__title {
+  color: var(---color-light);
+  font-size: 128px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+}
+
+
+/*#endregion*/

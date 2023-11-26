@@ -1,0 +1,46 @@
+/*#region shef */
+.shef-section{
+&__title {
+  position: relative;
+   margin-bottom: 80px;
+  &--centred{
+    text-align: center;
+  }
+}
+&__list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+&__item {
+  flex-basis: calc(100% / 2 - 30px / 2);
+}
+&__title::before {
+  content: "";
+  display: block;
+  width: 352px;
+  height: 2px;
+  position: absolute;
+  left: 8px;
+  bottom: 23px;
+  background: #cfcfbc;
+}
+&__title::after {
+  content: "";
+  display: block;
+  width: 352px;
+  height: 2px;
+  position: absolute;
+  right: 8px;
+  bottom: 23px;
+  background: #cfcfbc;
+}
+
+}
+
+/* .shef-wrap {
+  border: 1px solid var(--color-dark);
+  border-radius: 4px 4px 4px 200px;
+} */
+
+/* #endregion */

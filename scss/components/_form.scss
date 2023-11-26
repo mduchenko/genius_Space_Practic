@@ -1,0 +1,27 @@
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  &__el {
+  width: 100%;
+  height: 55px;
+  border-radius: 8px;
+  border: 1px solid #a18268;
+  padding: 16px 42px;
+  background-color: transparent;
+}
+&__el:focus {
+  outline: none;
+  color: var(--color-brand);
+  border: 1px solid var(--color-brand);
+}
+&__el::placeholder {
+  color: var(--color-dark);
+}
+&__el:focus::placeholder {
+  color: var(--color-brand);
+}
+}
+
+

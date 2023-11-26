@@ -1,0 +1,25 @@
+/*#region Tradition */
+.traditions-section{
+   padding-top: 96px;
+&__flex {
+  display: flex;
+  gap: 100px;
+}
+&__img {
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  max-width:  606px;
+  max-height: 466px;
+}
+&__title {
+  color: var(--color-dark);
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.31;
+}
+&__text {
+  padding-bottom: 42px;
+  margin: 0;
+}
+}
+/*#endregion */

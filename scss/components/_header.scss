@@ -1,0 +1,32 @@
+/* #region header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-top: 32px;
+  width: 100%;
+&__container,
+&__navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 152px;
+  align-items: center;
+}
+&__navigation {
+  flex-grow: 1;
+}
+&__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+  padding-left: 0;
+  align-items: center;
+}
+}
+/* .button:disabled {
+  color: gray;
+  background-color: #819b57;
+  cursor: no-drop;
+} */
+/* #endregion */
