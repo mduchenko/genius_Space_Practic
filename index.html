@@ -50,12 +50,27 @@
         <button class="mobile-menu__btn mobile-btn-close" type="button">
           close
         </button>
-        <a class="mobile-menu__logo" href="./index.html"
-          ><img
-            class="mobile-menu__logo-img"
-            src="logo/logo.svg"
-            alt="shop_bakery"
-        /></a>
+        <div class="mobile-menu__wrap">
+          <a href="./index.html"
+            ><img src="logo/logo.svg" alt="shop_bakery"
+          /></a>
+        </div>
+        <ul class="mobile-menu__list">
+          <li>
+            <a class="mobile-menu__link" href="#traditions-section"
+              >Наші традиції</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="#shef-section">Шеф-кухарі</a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="#formats-section">Формати</a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="#contacts-section">Контакти</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -308,41 +323,28 @@
                 </li>
               </ul>
               <div class="pagination">
-                <div class="pagination">
-                  <button
-                    class="pagination__button"
-                    type="button"
-                    aria-label="Go to slide 1"
-                  ></button>
-                  <button
-                    class="pagination__button"
-                    type="button"
-                    aria-label="Go to slide 2"
-                  ></button>
-                  <button
-                    class="pagination__button"
-                    type="button"
-                    aria-label="Go to slide 3"
-                  ></button>
-                  <button
-                    class="pagination__button"
-                    type="button"
-                    aria-label="Go to slide 4"
-                  ></button>
-                  <button
-                    class="pagination__button"
-                    type="button"
-                    aria-label="Go to slide 5"
-                  ></button>
-                  <button
-                    class="pagination__button"
-                    type="button"
-                    aria-label="Go to slide 6"
-                  ></button>
-                </div>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 1"
+                ></button>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 2"
+                ></button>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 3"
+                ></button>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 4"
+                ></button>
               </div>
             </div>
-
             <button
               class="carusel-button carusel-button-next carusel-button__lock"
               type="button"
@@ -354,7 +356,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="section contacts-section" id="contacts-section">
+      <section class="section contacts-section" id="contacts-section">
         <div class="container">
           <div class="contacts-section__wrap">
             <div class="contacts-section__item">
@@ -410,8 +412,6 @@
             <iframe
               class="contacts-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640546631747!2d30.488653212050988!3d50.45666967147485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699795244673!5m2!1suk!2sua"
-              width="603"
-              height="595"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -419,9 +419,9 @@
             ></iframe>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
           <div class="conteiner-logo">
@@ -497,7 +497,7 @@
       </div>
       <img class="bread-lt" src="./img/bread-lt.png" alt="bread-lt" />
       <img class="bread-rt" src="./img/bread-rt.png" alt="bread-rt" />
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close modal__btn-close" type="button">

@@ -1,27 +1,53 @@
 /* #region contacts */
 .contacts-section {
-  padding-bottom: 96px;
+  padding: 0;
+  @media screen and (min-width:$bp-tablet) {
+  padding-bottom: 96px;}
   &__wrap {
   display: flex;
-  gap: 32px;
+  flex-direction: column;
+  @media screen and (min-width:$bp-tablet) {
+    flex-direction:row;
+    gap: 32px;
+  }
 }
 &__item {
-  flex-basis: calc(100% / 2 - 32px / 2);
+  width: 100%;
   border-radius: 16px;
+  @media screen and (min-width:$bp-tablet) {
+  flex-basis: calc(100% / 2 - 32px / 2);
+  }
   /* flex-shrink: 0; */
 }
 &__title {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 1.31;
   color: var(--color-dark);
   margin-bottom: 42px;
+  text-align: center;
+   @media screen and (min-width:$bp-tablet){
+     font-size: 64px;
+   }
 }
 &__text{
   color: var(--color-brand-dark);
 }
 &__map{
-  border-radius: 16px;
+   margin: 0 -12px;
+   height: 175px;
+  @media screen and (min-width:$bp-tablet){
+     border-radius: 16px;
+     width: 450px;
+     margin: auto;
+     height:595px;
+  }
+ @media screen and (min-width:$bp-desktop){
+     border-radius: 16px;
+     width: 603px;
+     margin: auto;
+     height:595px;
+  }
 }
 }
 .cont-title {

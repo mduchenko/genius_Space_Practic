@@ -9,14 +9,23 @@
 }
 .footer-wrap {
   display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items:center;
+   
+  @media screen and (min-width:$bp-desktop) {
+  flex-direction: row;
   gap: 166px;
   justify-content: space-between;
+  }
 }
 .footer-list {
   display: flex;
   flex-direction: column;
+  align-items:center;
   gap: 16px;
-}
+  }
+
 .footer-list-social {
   display: flex;
   gap: 22px;
@@ -54,6 +63,14 @@
 
 .footer::before {
   content: "";
+  background-image: url("../img/bg/bread-mobile-left.png");
+  width: 85px;
+  height: 206px;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  @media screen and (min-width:$bp-desktop) {
+  content: "";
   background-image: url("../img/bread-lt.png");
   /* z-index: 1; */
   width: 179px;
@@ -61,6 +78,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  }
   /* background-size: cover; */
 }
 .footer::after {
