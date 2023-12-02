@@ -1,5 +1,8 @@
 
 .carusel-button {
+  &__lock{
+  display: none;
+  @media screen  and (min-width:$bp-desktop){
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +12,8 @@
   height: 44px;
   background-color: transparent;
   flex-shrink: 0;
+}
+  }
 }
 .carusel-arrow {
   fill: var(---color-light);

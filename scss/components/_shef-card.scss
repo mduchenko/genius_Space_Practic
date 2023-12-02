@@ -1,17 +1,31 @@
 .shef-card{
 display: flex;
+align-items:flex-start;
+gap: 16px;
+@media screen  and (min-width:$bp-desktop){
 gap: 30px;
+}
+&__wrap{
+  flex-shrink: 0;
+}
 &__foto {
+  width: 140px;
   /* display: block; */
   border-radius: 4px 4px 4px 200px;
   /* transform: translate(10px, -10px); */
   box-shadow: -16px 16px 0 0 var(---color-light),
     -16px 16px 0 1px var(--color-dark);
+    @media screen  and (min-width:$bp-desktop){
+      width: 240px;
+    }
+   
 }
 &__name {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 16px;
+  @media screen  and (min-width:$bp-desktop){
+  font-size: 40px;
 }
 &__description {
   margin-bottom: 18px;
@@ -19,4 +33,4 @@ gap: 30px;
 &__about &__description:last-child {
   margin-bottom: 0;
 }
-}
+}}
